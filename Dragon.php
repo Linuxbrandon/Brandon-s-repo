@@ -1,5 +1,5 @@
 <php
-echo 'What's your name?  '
+echo 'What's your name?  ';
 $name = fgets(STDIN);
 echo $name +  'ran into a dragon!!!  Care to engage?  ';
 $answer = fgets(STDIN);
@@ -29,8 +29,23 @@ if ($answer == 'yes') {
 }
 
 if ($health > $null) {
-	echo $name 
+	echo $name + 'finds a treasure chest!  Open?';
+	$open = (STDIN);
+	$treasure = rand(1,4);
+	if ($treasure == 1) {
+		echo 'Oh no!  Its a useless chunk of goat hair';
+	} else if ($treasure == 2) {
+		echo 'Thats not good!  You found some mice and a lump of cheese!';
+	} else if ($treasure == 3) {
+		echo 'Life is good!  The box contained some dice and a gold coin';
+		$gold = yes;
+	} else if ($treasure == 4) {
+		echo 'Empty :( Try again later';
+	} else {
+		echo 'This isnt even an option!';
+	}
 }
+dfasdfa
 
 echo 'End of Game';
 ?>
